@@ -3,19 +3,64 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AboutUsFragment"
-    android:gravity="center"
+    android:layout_margin="20dp"
     android:background="#fff"
-    android:clickable="true">
+    android:clickable="true"
+    tools:context=".fragments.AboutUsFragment">
     <!--    for avaoding overlapping fragments
     added     android:gravity="center"
         android:background="#fff"-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="serif"
+            android:textColor="@color/colorAccent"
+            android:text="Iso 9001 2015 Certified And \nTrade Mark Register Company"
+            android:textAlignment="center"
+            android:textSize="10sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/new_crown_normal_demo"
+                android:text="About"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/new_crown_normal_demo"
+                android:text=" Muktai"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </LinearLayout>
 
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_blank_fragment" />
-
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/antic_slab"
+            android:lines="18"
+            android:maxLines="4"
+            android:text="\t \t \t \t \t \t \t We Are in Manufacturing Of Agro Products Like Bio-Fertilizers, Bio- Pesticides, Micronutrients, Organic, Manure, Plant Growth Promoters, Soil Conditioners, Herbal Extracts, Bio- Stimulants Etc. Our Company Is Iso 9001 2015 Certified And Trade Mark Register Company. Our Products Are Certified By Government Of India Accredited Agency. \n \t\t\t\t\t\t\t  Our Motto Is Go Organic Save Nature.We Are Educating Farmers For Organic Farming, Soil Health, Soil Testing, Soil Fertility, Economics for Sustainable Agriculture." />
+    </LinearLayout>
 </RelativeLayout>

@@ -18,9 +18,11 @@ public class MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
+
         final ConstraintLayout iv = (ConstraintLayout) findViewById(R.id.listViewIcon);
 
 //        //Animation for leaves
@@ -34,23 +36,24 @@ public class MainActivity extends Activity {
 //        image2.setAnimation(bottomAnim);
 
         //animation for opacity
-        AlphaAnimation animation1 = new AlphaAnimation(0.9f, 0.1f);
-        animation1.setDuration(3000);
-        animation1.setStartOffset(3000);
-        animation1.setFillAfter(true);
-        iv.startAnimation(animation1);
+//        AlphaAnimation animation1 = new AlphaAnimation(0.9f, 0.1f);
+//        animation1.setDuration(1000);
+//        animation1.setStartOffset(1000);
+//        animation1.setFillAfter(true);
+//        iv.startAnimation(animation1);
 
 
         Thread thread = new Thread() {
             @Override
             public void run() {
                 try {
-                    sleep(4000);
+                    sleep(3000);
                 } catch (Exception e) {
                     e.printStackTrace();
                 } finally {
                     startActivity(new Intent(
                             MainActivity.this, HomeActivity.class));
+                    finish();
                 }
             }
         };
